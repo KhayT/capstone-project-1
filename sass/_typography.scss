@@ -1,0 +1,74 @@
+.heading {
+  &__primary {
+    color: $White;
+  }
+
+  &__secondary {
+    color: rgba($White, 0.8);
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: $font-secondary;
+
+    @media only screen and (max-width: 750px) {
+      width: 90%;
+    }
+  }
+
+  &__3 {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__sub {
+    font-size: 0.8rem;
+    font-family: $font-secondary;
+    color: rgba($White, 0.9);
+  }
+
+  &__5 {
+    margin-bottom: 15px;
+  }
+
+  &__6 {
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: $font-secondary;
+    color: rgba($White, 0.9);
+    font-size: 0.8rem;
+  }
+
+  &__8 {
+    font-family: $font-secondary;
+    color: rgba($White, 0.9);
+    font-size: 0.8rem;
+  }
+}
+
+.btn {
+  //   display: block;
+  background-image: linear-gradient(
+    to right,
+    rgba($Cyan, 0.99),
+    rgba($Blue, 0.99)
+  );
+  border: none;
+  outline: none;
+  padding: 0.75rem 4.5rem;
+  color: $White;
+  border-radius: 5rem;
+  font-weight: 700;
+
+  @media only screen and (max-width: 750px) {
+    width: 70%;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba($Cyan, 0.99),
+      rgba($Cyan, 0.99)
+    );
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,44 @@
+.nav {
+  grid-row: nav-start / nav-end;
+  grid-column: 1 / -1;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $Dark-Blue-intro;
+
+  @media only screen and (max-width: 750px) {
+    padding: 0.8rem;
+  }
+
+  &__img {
+    height: 2rem;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+
+      @media only screen and (max-width: 400px) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $White;
+
+    &:hover {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}

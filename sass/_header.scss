@@ -1,0 +1,38 @@
+.header {
+  grid-row: header-start / header-end;
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 1rem;
+  background-color: $Dark-Blue-intro;
+
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  @media only screen and (max-width: 750px) {
+    padding: 1rem;
+    grid-column: 1 / -1;
+    margin-bottom: 6rem;
+    background-image: url(../images/bg-curvy-mobile.svg);
+  }
+
+  &__img {
+    width: 50%;
+    max-width: 37.5rem;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    width: 50%;
+    margin: auto;
+    max-width: 37.5rem;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+}

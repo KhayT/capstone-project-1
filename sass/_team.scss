@@ -1,0 +1,79 @@
+.team {
+  grid-row: team-start / team-end;
+  grid-column: col-start 2 / col-end 7;
+  margin-top: 7rem;
+
+  max-width: 75rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, [col-start] calc(100% / 3) [col-end]);
+  grid-template-rows: max-content;
+  grid-gap: 1.5rem;
+
+  position: relative;
+
+  @media only screen and (max-width: 750px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+  }
+
+  &__text {
+    padding: 1.5rem 1rem 0.75rem 1.5rem;
+    background-color: $Dark-Blue-testimonials;
+
+    font-size: 0.8rem;
+    font-family: $font-secondary;
+    color: rgba($White, 0.9);
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &__name {
+    margin-bottom: 3px;
+  }
+
+  &__position {
+    font-size: 0.5rem;
+  }
+
+  &__quote {
+    position: absolute;
+    top: -2.25rem;
+    left: -0.5rem;
+  }
+
+  &__1 {
+    grid-column: col-start 1 / col-end 1;
+    position: relative;
+
+    @media only screen and (max-width: 750px) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__2 {
+    grid-column: col-start 2 / col-end 2;
+
+    @media only screen and (max-width: 750px) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__3 {
+    grid-column: col-start 3 / col-end 3;
+
+    @media only screen and (max-width: 750px) {
+      grid-column: 1 / -1;
+    }
+  }
+}
